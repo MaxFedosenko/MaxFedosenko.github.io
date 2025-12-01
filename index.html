@@ -12,10 +12,9 @@
     --accent:#0f172a;
     --line:#e6e9ee;
     --left-width:300px;
-    /* orange palette for left column */
-    --left-orange-start:#ffd8a8; /* warm light orange */
-    --left-orange-end:#fff3e0;   /* very pale orange */
-    --right-gray:#f5f6f7;        /* light gray for right column */
+    --left-orange-start:#ffd8a8;
+    --left-orange-end:#fff3e0;
+    --right-gray:#f5f6f7;
     --section-bg:#f7fbff;
     --section-accent:#e6f0ff;
     --bullet:#000;
@@ -32,8 +31,7 @@
     overflow:hidden;
     border:1px solid rgba(15,23,42,0.04);
   }
-
-  /* left column (orange) */
+  
   .left{
     width:var(--left-width);
     min-width:var(--left-width);
@@ -43,7 +41,6 @@
     border-right:1px solid var(--line);
   }
 
-  /* circular photo container */
   .photo{
     width:96px;
     height:96px;
@@ -59,7 +56,6 @@
   .name{font-size:18px;font-weight:700;color:var(--accent);margin:0 0 6px 0;text-transform:uppercase;}
   .title{font-size:12px;color:var(--muted);margin:0 0 14px 0;text-transform:uppercase;}
 
-  /* left section blocks: white panels on orange background */
   .left .contact,
   .left .section{
     background:#ffffff;
@@ -85,7 +81,6 @@
   .contact a{color:var(--accent);text-decoration:none;}
   .contact a:hover{text-decoration:underline;}
 
-  /* skills as vertical list with circle at start of each line */
   .skills-list{margin:0;padding:0;list-style:none;}
   .skills-list li{
     display:flex;
@@ -104,14 +99,12 @@
 
   .lang{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:6px 0;border-bottom:1px dashed rgba(0,0,0,0.04);}
 
-  /* right column (light gray) */
   .right{
     flex:1;
     padding:28px 30px;
     background:var(--right-gray);
   }
 
-  /* section title style (small pill like sample) */
   .section-title{display:flex;align-items:center;justify-content:space-between;margin:6px 0 12px 0;}
   .section-title h3{
     margin:0;font-size:13px;color:var(--accent);text-transform:uppercase;
@@ -120,7 +113,6 @@
     letter-spacing:0.6px;
   }
 
-  /* each major block on the right has a subtle white background and rounded corners */
   .section-block{
     background:#ffffff;
     border-radius:8px;
@@ -144,7 +136,6 @@
   .courses{display:flex;gap:12px;flex-wrap:wrap;}
   .course{background:#ffffff;border:1px solid var(--line);padding:6px 8px;border-radius:6px;font-size:13px;color:var(--accent);}
 
-  /* code styling inside section-block */
   .code-pre{
     background:transparent;
     border-radius:6px;
@@ -157,7 +148,6 @@
     overflow:auto;
   }
 
-  /* responsive */
   @media (max-width:820px){
     .card{flex-direction:column;}
     .left{width:100%;min-width:0;border-right:none;border-bottom:1px solid var(--line);}
@@ -170,7 +160,6 @@
   <div class="wrap">
     <div class="card" role="document" aria-label="Resume">
       <aside class="left" aria-label="Contact information">
-        <!-- Replace "photo.jpg" with your 353x423 JPEG file name -->
         <div class="photo" aria-hidden="false">
           <img src="photo.jpg" alt="Photo of Maksim Fedosenko">
         </div>
@@ -297,4 +286,5 @@ class App {
   </div>
 </body>
 </html>
+
 
